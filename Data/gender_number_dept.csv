@@ -1,0 +1,66 @@
+count,dept_name,title,gender
+44,Sales,Staff,M
+18,Sales,Staff,F
+84,Sales,Senior Staff,F
+126,Sales,Senior Staff,M
+42,Research,Senior Staff,M
+4,Research,Engineer,F
+11,Research,Staff,F
+3,Research,Senior Engineer,F
+10,Research,Staff,M
+2,Research,Technique Leader,M
+10,Research,Senior Engineer,M
+29,Research,Senior Staff,F
+2,Research,Engineer,M
+1,Quality Management,Assistant Engineer,F
+5,Quality Management,Technique Leader,F
+5,Quality Management,Technique Leader,M
+32,Quality Management,Senior Engineer,M
+9,Quality Management,Engineer,F
+17,Quality Management,Engineer,M
+28,Quality Management,Senior Engineer,F
+4,Production,Senior Staff,M
+5,Production,Assistant Engineer,F
+2,Production,Senior Staff,F
+105,Production,Senior Engineer,F
+12,Production,Assistant Engineer,M
+1,Production,Staff,M
+8,Production,Technique Leader,F
+128,Production,Senior Engineer,M
+36,Production,Engineer,M
+27,Production,Technique Leader,M
+28,Production,Engineer,F
+7,Marketing,Staff,F
+15,Marketing,Staff,M
+46,Marketing,Senior Staff,F
+58,Marketing,Senior Staff,M
+14,Human Resources,Staff,M
+37,Human Resources,Senior Staff,F
+49,Human Resources,Senior Staff,M
+7,Human Resources,Staff,F
+8,Finance,Staff,F
+5,Finance,Staff,M
+35,Finance,Senior Staff,M
+26,Finance,Senior Staff,F
+8,Development,Assistant Engineer,F
+1,Development,Staff,M
+1,Development,Staff,F
+3,Development,Senior Staff,F
+24,Development,Technique Leader,M
+6,Development,Senior Staff,M
+4,Development,Assistant Engineer,M
+47,Development,Engineer,F
+114,Development,Senior Engineer,F
+154,Development,Senior Engineer,M
+10,Development,Technique Leader,F
+63,Development,Engineer,M
+1,Customer Service,Technique Leader,F
+1,Customer Service,Engineer,F
+2,Customer Service,Technique Leader,M
+9,Customer Service,Senior Engineer,M
+34,Customer Service,Senior Staff,F
+2,Customer Service,Engineer,M
+15,Customer Service,Staff,M
+3,Customer Service,Senior Engineer,F
+10,Customer Service,Staff,F
+51,Customer Service,Senior Staff,M

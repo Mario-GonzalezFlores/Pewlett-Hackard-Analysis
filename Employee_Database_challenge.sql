@@ -51,3 +51,37 @@ ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	AND (t.to_date = '9999-01-01')
 ORDER BY emp_no ASC;
+
+-- Gender title
+SELECT e.emp_no,
+	e.gender,
+	d.dept_name,
+    t.title
+INTO emp_gender_dept
+FROM employees as e
+INNER JOIN dept_employees AS de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles AS t
+ON (e.emp_no = t.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+	AND (t.to_date = '9999-01-01')
+ORDER BY emp_no ASC;
+
+SELECT * FROM emp_gender_dept;
+DROP TABLE emp_gender_dept;
+
+
+SELECT COUNT (emp_no) as count,
+dept_name,
+title,
+gender
+
+INTO gender_number_dept
+FROM emp_gender_dept
+GROUP BY dept_name,title, gender
+ORDER BY dept_name DESC;
+
+SELECT * FROM gender_number_dept;
+DROP TABLE gender_number_dept;
