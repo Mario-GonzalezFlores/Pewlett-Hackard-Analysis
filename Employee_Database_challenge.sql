@@ -85,3 +85,51 @@ ORDER BY dept_name DESC;
 
 SELECT * FROM gender_number_dept;
 DROP TABLE gender_number_dept;
+
+-- Gender salary
+
+SELECT e.emp_no,
+	e.gender,
+    s.salary
+INTO gender_salary
+FROM employees as e
+INNER JOIN salaries AS s
+ON (e.emp_no = s.emp_no)
+WHERE (s.to_date = '2001-01-31')
+ORDER BY emp_no ASC;
+
+-- Total count by gender
+SELECT * FROM emp_gender_dept;
+DROP TABLE emp_gender_dept;
+
+SELECT COUNT (emp_no) as count,
+gender
+
+INTO gender_tot
+FROM emp_gender_dept
+GROUP BY gender;
+
+SELECT * FROM gender_tot;
+
+-- Salary by gender and employee
+SELECT e.emp_no,
+	e.gender,
+    s.salary
+INTO gender_salary
+FROM employees as e
+INNER JOIN salaries AS s
+ON (e.emp_no = s.emp_no)
+WHERE (s.to_date = '2001-01-31')
+ORDER BY emp_no ASC;
+
+SELECT * FROM gender_salary;
+
+-- Salary by gender
+SELECT COUNT (emp_no) as count,
+gender,
+AVG(salary)
+INTO gender_salary_tot
+FROM gender_salary
+GROUP BY gender;
+
+SELECT * FROM gender_salary_tot;
